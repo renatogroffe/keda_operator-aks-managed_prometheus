@@ -1,0 +1,22 @@
+apiVersion: azmonitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: keda-operator
+  namespace: keda
+spec:
+  labelLimit: 63
+  labelNameLengthLimit: 511
+  labelValueLengthLimit: 1023
+
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: keda-operator
+
+  endpoints:
+    - port: metrics
+      path: /metrics
+      interval: 30s
+
+  namespaceSelector:
+    matchNames:
+      - keda
