@@ -68,3 +68,10 @@ Com o dashboard oficial podemos acompanhar os processos de scale up e scale down
 ![Dashboard do Grafana para KEDA 1](img/grafana-keda-01.png)
 
 ![Dashboard do Grafana para KEDA 2](img/grafana-keda-02.png)
+
+Dashboards criados pela comunidade e que estão no site da Grafana:
+- [Keda Operator](https://grafana.com/grafana/dashboards/22111-keda-operator/)
+- [Kubernetes / Autoscaling / KEDA / Scaled Object](https://grafana.com/grafana/dashboards/23951-kubernetes-autoscaling-keda-scaled-object/)
+
+
+
